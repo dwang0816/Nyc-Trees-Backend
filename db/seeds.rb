@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'rest-client'
 
-res = RestClient.get "https://data.cityofnewyork.us/resource/uvpi-gqnh.json"
+res = RestClient.get "https://data.cityofnewyork.us/resource/uvpi-gqnh.json?$limit=3000" 
 
 tree_array = JSON.parse(res)
 

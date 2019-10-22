@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2019_10_09_180218) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "trees", force: :cascade do |t|
     t.string "spc_common"
     t.string "health"
