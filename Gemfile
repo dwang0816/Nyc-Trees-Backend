@@ -60,6 +60,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'pry'
 
-gem 'rest-client', "~> 1.4"
+gem 'rest-client'
 
 # gem 'taps'
