@@ -63,5 +63,3 @@ gem 'pry'
 gem 'rest-client'
 
 # gem 'taps'
-
-gem 'wdm'
