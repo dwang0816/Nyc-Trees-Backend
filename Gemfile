@@ -4,8 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.2.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.3'
-
+gem 'rails', '~>7.0.5'
 group :development, :test do 
    gem 'sqlite3'    #gem to use in development environment
 end
@@ -18,12 +17,12 @@ end
 # gem 'pg'
 source 'https://rubygems.org'
 gem 'nokogiri'
-gem 'rack', '~> 2.2.4'
+gem 'rack'
 gem 'rspec'
 
 # gem 'rails_12factor', group: :production
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -38,7 +37,7 @@ gem 'puma', '~> 3.11'
 # gem 'capistrano-rails', group: :development
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.1.0', require: false
+gem 'bootsnap', require: false
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
@@ -59,7 +58,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# gem 'pry'
+gem 'pry'
 
 gem 'rest-client', "~> 1.4"
 
