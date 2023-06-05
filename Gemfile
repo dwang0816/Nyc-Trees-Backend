@@ -6,12 +6,13 @@ ruby '3.2.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 
-# group :development, :test do 
-#    gem 'sqlite3'    #gem to use in development environment
-# end
+group :development, :test do 
+   gem 'sqlite3'    #gem to use in development environment
+end
 
 group :production do 
   gem 'pg'         #gem to use in production environment
+  gem 'rails_12factor'
 end
 
 # gem 'pg'
