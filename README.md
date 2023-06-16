@@ -27,7 +27,7 @@ $ git clone https://github.com/your-username/tree-data-collection.git
 2. Navigate to the project directory:
 
 ```bash
-$ cd tree-data-collection
+$ cd nyc-trees-backend
 ```
 
 3. Install the required gems:
