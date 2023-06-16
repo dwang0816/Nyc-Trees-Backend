@@ -53,27 +53,29 @@ $ rails db:migrate
 The application requires a connection to your PostgreSQL database. Update the database configuration in `config/database.yml` to match your PostgreSQL setup. Replace the `<username>` and `<password>` placeholders with your PostgreSQL credentials.
 
 ```yml
-default: &default
-  adapter: postgresql
-  encoding: unicode
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: <username>
-  password: <password>
-  host: localhost
-
 development:
-  <<: *default
-  database: tree_data_collection_development
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  database: my_database_development
+  password: ****
 
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
 test:
-  <<: *default
-  database: tree_data_collection_test
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  database: my_database_development
+  password: ****
 
 production:
-  <<: *default
-  database: tree_data_collection_production
-  username: tree_data_collection
-  password: <%= ENV['TREE_DATA_COLLECTION_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  database: my_database_development
+  password: ****
 ```
 
 ## Usage
